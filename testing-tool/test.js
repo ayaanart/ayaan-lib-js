@@ -7,7 +7,7 @@ let failedCount = 0;
  * @param {string} name Name of the test.
  * @param {function} fn Test code containing the assertions.
  * @example
- * test("Adds two numbers", () => assertEqual(2+5, 5);); // logs "PASSED: Adds two numbers"
+ * test("Adds two numbers", () => assertEqual(2 + 3, 5)); // logs "PASSED: Adds two numbers"
  */
 export function test(name, fn) {
 	try {
