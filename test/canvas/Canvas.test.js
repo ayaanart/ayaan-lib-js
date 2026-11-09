@@ -49,6 +49,14 @@ test("RangeError for Infinity width", () => {
 	assertThrow(() => new Canvas({ width: Infinity }), RangeError, ["width", "Infinity"]);
 });
 
+test("RangeError for Negative height", () => {
+	assertThrow(() => new Canvas({ height: -10 }), RangeError, "height=-10");
+});
+
+test("RangeError for 0 width", () => {
+	assertThrow(() => new Canvas({ width: 0 }), RangeError, "width=0");
+});
+
 test("TypeError for string for height", () => {
 	assertThrow(() => new Canvas({ height: "10" }), TypeError, ["height", "10"]);
 });
