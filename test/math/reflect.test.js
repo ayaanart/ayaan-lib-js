@@ -31,7 +31,7 @@ test("bound1 > bound2", () => {
 
 // Upset cases ----------------------
 test("TypeError for string", () => {
-	assertThrow(() => reflect("4", 0, 10), TypeError, ["4",  "movingValue"]);
+	assertThrow(() => reflect("4", 0, 10), TypeError, ["4",  "valueToReflect"]);
 });
 
 test("RangeError for NaN", () => {
